@@ -43,31 +43,81 @@
           fiskare finns det alltid något nytt att upptäcka.
         </p>
       </section>
-      <section class="cards" id="platser">
-        <article class="card card-lake">
-          <p>01</p>
-          <div>
-            <h3>Stillhet vid sjön</h3>
-            <p>Perfekt för abborre, gädda och en stund för dig själv.</p>
-            <a href="#kontakt">Läs mer →</a>
+      <section class="cards" id="platser" aria-label="Fiskeplatser">
+        <button
+          class="carousel-button carousel-prev"
+          type="button"
+          aria-label="Visa tidigare fiskeplatser"
+        >
+          &larr;
+        </button>
+        <div class="carousel-window">
+          <div class="cards-track">
+            <article class="card card-lake">
+              <p>01</p>
+              <div>
+                <h3>Stillhet vid sjön</h3>
+                <p>Perfekt för abborre, gädda och en stund för dig själv.</p>
+                <a href="#kontakt">Läs mer →</a>
+              </div>
+            </article>
+            <article class="card card-river">
+              <p>02</p>
+              <div>
+                <h3>Strömmande vatten</h3>
+                <p>Följ med till älven och prova lyckan efter öring.</p>
+                <a href="kontakt.html">Läs mer →</a>
+              </div>
+            </article>
+            <article class="card card-sea">
+              <p>03</p>
+              <div>
+                <h3>Havet väntar</h3>
+                <p>Saltstänk, horisont och ett napp när du minst anar det.</p>
+                <a href="kontakt.html">Läs mer →</a>
+              </div>
+            </article>
+            <article class="card card-mountain">
+              <p>04</p>
+              <div>
+                <h3>Fjällens vatten</h3>
+                <p>Klart vatten, vilda vyer och öring på kroken.</p>
+                <a href="kontakt.html">Läs mer &rarr;</a>
+              </div>
+            </article>
+            <article class="card card-reeds">
+              <p>05</p>
+              <div>
+                <h3>Vassvikens gädda</h3>
+                <p>Smyg längs vassen när de stora gäddorna jagar.</p>
+                <a href="kontakt.html">Läs mer &rarr;</a>
+              </div>
+            </article>
+            <article class="card card-sunset">
+              <p>06</p>
+              <div>
+                <h3>Kväll vid bryggan</h3>
+                <p>Njut av kvällsljuset medan du väntar på napp.</p>
+                <a href="kontakt.html">Läs mer &rarr;</a>
+              </div>
+            </article>
+            <article class="card card-coast">
+              <p>07</p>
+              <div>
+                <h3>Kustens äventyr</h3>
+                <p>Upptäck fisket där skärgården möter havet.</p>
+                <a href="kontakt.html">Läs mer &rarr;</a>
+              </div>
+            </article>
           </div>
-        </article>
-        <article class="card card-river">
-          <p>02</p>
-          <div>
-            <h3>Strömmande vatten</h3>
-            <p>Följ med till älven och prova lyckan efter öring.</p>
-            <a href="kontakt.html">Läs mer →</a>
-          </div>
-        </article>
-        <article class="card card-sea">
-          <p>03</p>
-          <div>
-            <h3>Havet väntar</h3>
-            <p>Saltstänk, horisont och ett napp när du minst anar det.</p>
-            <a href="kontakt.html">Läs mer →</a>
-          </div>
-        </article>
+        </div>
+        <button
+          class="carousel-button carousel-next"
+          type="button"
+          aria-label="Visa fler fiskeplatser"
+        >
+          &rarr;
+        </button>
       </section>
       <section class="cta" id="kontakt">
         <p class="eyebrow">DAGS ATT KASTA UT?</p>
@@ -80,5 +130,6 @@
     <footer>
       <span>© 2026 FISKELYCKA</span><span>FÅNGA ÖGONBLICKET</span>
     </footer>
+    <script src="javascript.js"></script>
   </body>
 </html>
