@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kontakta Fiskelycka för frågor om fiskeplatser, tips och samarbeten."
+    />
+    <title>Kontakt | Fiskelycka</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero contact-hero">
+      <nav class="nav container">
+        <a class="logo" href="index.html#start">FISKE<span>LYCKA</span></a>
+        <div class="nav-links">
+          <a href="index.html#tips">Fisketips</a>
+          <a href="index.html#platser">Fiskeplatser</a>
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+      </nav>
+
+      <section class="hero-content container" id="start">
+        <p class="eyebrow">KONTAKTA OSS</p>
+        <h1>Vi hjälper dig<br />ut till vattnet.</h1>
+        <p class="intro">
+          Har du frågor om utrustning, fiskeplatser eller vill samarbeta med
+          Fiskelycka? Skicka ett meddelande så hör vi av oss.
+        </p>
+      </section>
+    </header>
+
+    <main class="container contact-main">
+      <section class="contact-grid">
+        <article>
+          <p class="eyebrow green">UPPGIFTER</p>
+          <h2>Snabb kontakt</h2>
+          <p class="body-text">
+            E-post: hej@fiskelycka.se<br />
+            Telefon: 070-123 45 67<br />
+            Öppet: Mån–Fre 09:00–17:00
+          </p>
+        </article>
+
+        <form class="contact-form" action="#" method="post">
+          <label for="name">Namn</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">E-post</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Meddelande</label>
+          <textarea id="message" name="message" rows="6" aria-describedby="message-count" required></textarea>
+          <p id="message-count" class="word-count" aria-live="polite">0 / 150 ord</p>
+
+          <button class="button" type="submit">Skicka <span>→</span></button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 FISKELYCKA</span><span>FÅNGA ÖGONBLICKET</span>
+    </footer>
+    <script src="javascript.js"></script>
+  </body>
+</html>

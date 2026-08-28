@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+
+:root {
+    --ink: #112e2a;
+    --cream: #f4f0e7;
+    --orange: #e96136;
+    --green: #2e6252;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: var(--ink);
+    background: var(--cream);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container {
+    width: min(1120px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+.hero {
+    min-height: 740px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(9, 37, 35, .9), rgba(9, 37, 35, .34)), url('https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?auto=format&fit=crop&w=1800&q=85') center/cover;
+}
+
+.nav {
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .32);
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font: 700 1.1rem 'DM Mono', monospace;
+}
+
+.logo span {
+    color: #f6bd61;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: .84rem;
+}
+
+.nav-links a:hover {
+    color: #f6bd61;
+}
+
+.hero-content {
+    padding-top: 135px;
+}
+
+.eyebrow {
+    margin: 0 0 17px;
+    letter-spacing: .15em;
+    font: 500 .7rem 'DM Mono', monospace;
+}
+
+.hero h1,
+h2 {
+    margin: 0;
+    font-family: 'Playfair Display', Georgia, serif;
+    line-height: .98;
+}
+
+.hero h1 {
+    max-width: 730px;
+    font-size: clamp(3.7rem, 8vw, 6.7rem);
+}
+
+.intro {
+    max-width: 440px;
+    line-height: 1.65;
+    margin: 27px 0 32px;
+    color: rgba(255, 255, 255, .88);
+}
+
+.button {
+    display: inline-flex;
+    gap: 26px;
+    align-items: center;
+    padding: 15px 20px;
+    background: var(--orange);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .87rem;
+    transition: transform .2s, background .2s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    background: #c94c27;
+}
+
+.button span {
+    font-size: 1.3rem;
+}
+
+.scroll-hint {
+    position: absolute;
+    bottom: 28px;
+    left: max(24px, calc((100% - 1120px) / 2));
+    font: .62rem 'DM Mono', monospace;
+    letter-spacing: .12em;
+}
+
+.scroll-hint span {
+    display: inline-block;
+    height: 1px;
+    width: 76px;
+    margin-left: 12px;
+    vertical-align: middle;
+    background: #fff;
+}
+
+.welcome {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    padding: 120px 0;
+}
+
+.green {
+    color: var(--green);
+}
+
+.welcome h2,
+.cta h2 {
+    font-size: clamp(2.8rem, 5vw, 4.6rem);
+}
+
+.body-text {
+    align-self: end;
+    max-width: 440px;
+    line-height: 1.8;
+    color: #43605a;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.card {
+    min-height: 450px;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+.card>p {
+    font: .75rem 'DM Mono', monospace;
+}
+
+.card h3 {
+    margin: 0 0 9px;
+    font: 600 2rem 'Playfair Display', serif;
+}
+
+.card div p {
+    margin: 0 0 18px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .85);
+}
+
+.card a {
+    color: white;
+    font: 500 .75rem 'DM Mono', monospace;
+    text-underline-offset: 5px;
+}
+
+.card-lake {
+    background-color: #415e51;
+    background-image: url('https://images.unsplash.com/photo-1494783367193-149034c05e8f?auto=format&fit=crop&w=800&q=80');
+}
+
+.card-river {
+    background-color: #58624d;
+    background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80');
+}
+
+.card-sea {
+    background-color: #315d68;
+    background-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80');
+}
+
+.cta {
+    padding: 120px 24px;
+    text-align: center;
+    color: #fff;
+    background: var(--green);
+}
+
+.cta h2 {
+    margin-bottom: 34px;
+}
+
+.cta .eyebrow {
+    color: #cddfbd;
+}
+
+.light {
+    background: #f6bd61;
+    color: var(--ink);
+}
+
+.light:hover {
+    background: #fff0c9;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    color: #53726a;
+    font: .65rem 'DM Mono', monospace;
+    letter-spacing: .08em;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        min-height: 680px;
+    }
+
+    .nav {
+        height: 76px;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: .7rem;
+    }
+
+    .hero-content {
+        padding-top: 130px;
+    }
+
+    .welcome {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 76px 0;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        min-height: 340px;
+    }
+
+    .cta {
+        padding: 80px 24px;
+    }
+}
+
+/* ...existing code... */
+
+.contact-hero {
+    min-height: 520px;
+    background: linear-gradient(90deg, rgba(9, 37, 35, .9), rgba(9, 37, 35, .45)), url('https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1800&q=85') center/cover;
+}
+
+.contact-main {
+    padding: 90px 0 120px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+
+.contact-form {
+    display: grid;
+    gap: 12px;
+}
+
+.contact-form label {
+    font: 500 .78rem 'DM Mono', monospace;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #43605a;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid #c7d3cf;
+    background: #fff;
+    padding: 12px 14px;
+    font: 400 1rem 'DM Sans', sans-serif;
+    color: var(--ink);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #8eb2a7;
+    border-color: #8eb2a7;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.word-count {
+    margin: -4px 0 8px;
+    color: #43605a;
+    font: .72rem 'DM Mono', monospace;
+    text-align: right;
+}
+
+.word-count.limit-reached {
+    color: #b63b21;
+}
+
+/* ...existing code... */
+
+@media (max-width: 700px) {
+    /* ...existing code... */
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+}
