@@ -82,3 +82,34 @@ if (track && previousButton && nextButton) {
     }, { once: true });
   });
 }
+
+/**
+ * Login form interactions.
+ */
+
+const loginForm = document.querySelector("[data-login-form]");
+const passwordToggle = document.querySelector(".password-toggle");
+const loginPassword = document.querySelector("#login-password");
+const loginStatus = document.querySelector("[data-login-status]");
+
+if (passwordToggle && loginPassword) {
+  passwordToggle.addEventListener("click", () => {
+    const isHidden = loginPassword.type === "password";
+    loginPassword.type = isHidden ? "text" : "password";
+    passwordToggle.textContent = isHidden ? "Dölj" : "Visa";
+    passwordToggle.setAttribute("aria-pressed", String(isHidden));
+  });
+}
+
+if (loginForm && loginStatus) {
+  loginForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    if (!loginForm.checkValidity()) {
+      loginForm.reportValidity();
+      return;
+    }
+
+    loginStatus.textContent = "Inloggningen är klar att kopplas till en kontotjänst.";
+  });
+}
